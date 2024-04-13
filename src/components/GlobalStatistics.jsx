@@ -21,7 +21,7 @@ function GlobalStatistics() {
 
   useEffect(() => {
     try {
-      setUsername(localStorage.getItem("username"));
+      setUsername(localStorage.getItem("nom"));
       setToken(localStorage.getItem("crsf-token"));
       let config = {
         headers: { Authorization: `Bearer ${token}` },
